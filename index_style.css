@@ -1,0 +1,46 @@
+html, body {
+    background-color: rgb(56, 56, 56) !important;
+    color: lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, p, il, ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+a {
+    color:cornflowerblue;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+div {
+    margin: auto;
+    min-width: 500px;
+    max-width: 1000px;
+    width: 50%;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 8px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    box-shadow: 0px 0px 10px lavender;
+}
+
+table {
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px dashed rgb(99, 99, 99);
+    padding: 5px;
+}
