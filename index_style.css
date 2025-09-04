@@ -4,9 +4,9 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1, h2, p, il, ol {
+h1, h2, p {
     text-align: center;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
 }
 
 a {
@@ -15,10 +15,32 @@ a {
 
 img {
     display: block;
-    margin: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: inherit;
+    max-width: 50%;
 }
 
-div {
+div.separator {
+    margin: auto;
+    
+    border-bottom: 1px solid rgb(99, 99, 99);
+    border-top: 1px solid rgb(99, 99, 99);
+    
+    max-width: 50%;
+    min-width: 200px;
+    min-height: 1px;
+}
+
+div.list {
+    margin: auto;
+    width: 50%;
+    max-width: fit-content;
+}
+
+div.content {
+    
     margin: auto;
     min-width: 500px;
     max-width: 1000px;
@@ -31,10 +53,13 @@ div {
     padding-bottom: 10px;
     padding-top: 10px;
     
-    box-shadow: 0px 0px 10px lavender;
+    box-shadow: 0px 0px 10px lavender, inset 0px 0px 20px black;
 }
 
 table {
+    margin-left: auto;
+    margin-right: auto;
+    
     border: 1px solid rgb(177, 177, 177);
     border-radius: 10px;
     padding: 10px;
@@ -42,5 +67,6 @@ table {
 
 th, td {
     border: 1px dashed rgb(99, 99, 99);
-    padding: 5px;
+    border-radius: 4px;
+    padding: 10px;
 }
